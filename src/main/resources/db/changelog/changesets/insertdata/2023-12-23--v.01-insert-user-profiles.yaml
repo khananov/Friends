@@ -1,0 +1,59 @@
+databaseChangeLog:
+  - changeSet:
+      id: v.01-insert-user-profiles
+      author: khananov
+      changes:
+        - insert:
+            tableName: user_profiles
+            columns:
+              - column:
+                  name: username
+                  value: admin
+              - column:
+                  name: password
+                  value: admin
+              - column:
+                  name: first_name
+                  value: Admin
+              - column:
+                  name: last_name
+                  value: Adminovich
+              - column:
+                  name: role
+                  value: ADMIN
+        - insert:
+            tableName: user_profiles
+            columns:
+              - column:
+                  name: username
+                  value: manager
+              - column:
+                  name: password
+                  value: manager
+              - column:
+                  name: first_name
+                  value: Manager
+              - column:
+                  name: last_name
+                  value: Managerovich
+              - column:
+                  name: role
+                  value: MANAGER
+        - insert:
+            tableName: user_profiles
+            columns:
+              - column:
+                  name: username
+                  value: user
+              - column:
+                  name: password
+                  value: user
+              - column:
+                  name: first_name
+                  value: User
+              - column:
+                  name: last_name
+                  value: Userovich
+              - column:
+                  name: role
+                  value: USER
