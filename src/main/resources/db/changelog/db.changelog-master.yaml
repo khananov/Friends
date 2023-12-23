@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changesets/createtables/2023-12-23--v.01-create-table-user-profiles.yaml
+  - include:
+      file: db/changelog/changesets/insertdata/2023-12-23--v.01-insert-user-profiles.yaml
